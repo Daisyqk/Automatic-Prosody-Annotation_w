@@ -45,16 +45,11 @@ audio {
 <div style="border: none; width: 1000px; margin: 0 auto;">
 <body>
     <h2 align="center">Automatic Prosody Annotation with Pre-Trained Text-Speech Model</h2>
-We take the DurAIN TTS as our test-bed, and conduct crowd-sourced MOS tests to compare TTS systems trained with automatic prosody annotations, manual 
-annotations and without prosody annotations. For all TTS systems, we adopt consistent text content and prosody content provided in the original text set 
-as inputs and randomly shuffled the order of the utterances to exclude other interference factors, only examining the audio prosody. Note that each input 
-used in the MOS test contains at least one PW or IPH prosodisc boundary with at least 12 Chinese characters. For the system trained without prosody label,
-the prosodic boundary in the input text will be omitted. Each audio sample is rated by 24 testers, who are asked to evaluate the prosody naturalness of
-the synthesized speech and the consistency between the reference audio record on a five-point Likerrt scale [XXX], with the lowest and highest scores being 
-1 (“Bad”) and 5 (“Excellent”).
+We take the DurAIN TTS as our test-bed and conduct crowd-sourced MOS tests to compare TTS systems trained with automatic prosody annotations, manual annotations, and without prosody annotations
+For all TTS systems, we adopt the same text and prosody content in the original test set as inputs and randomly shuffle the order of the utterances to exclude other interference factors, only examining the audio prosody.  Note that each input used in the MOS test contains at least one PW or IPH prosodic boundary with at least 12 Chinese characters. For the system trained without prosodic boundary, the prosodic boundary in the input text will be omitted. Each audio sample is rated by 24 testers, who are asked to evaluate the prosody naturalness of the synthesized speech on a five-point scale, with the lowest and highest scores being 1 (“Bad”) and 5 (“Excellent”).
 The MOS results are shown in the following table.
 <figure>
-    <p style="text-align:center"><img src="./mos.png"  alt="AVSE" height=100px width=300px/></p>
+    <p style="text-align:center"><img src="./mos.png"  alt="AVSE" height=100px width=200px/></p>
 <!--       <figcaption style="vertical-align:middle"> <b>Figure 1: </b> Illurstration of the audio-visual separation model</figcaption> -->
   </figure>
 Here are part of the speech for MOS test:
