@@ -270,21 +270,20 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
     <p style="text-align:center"><img src="./framework.png"  alt="AVSE" width=400px/></p>
       </figure>
     <h3>
-        Examples of input and output of the model:
+        Input and output of the model:
       </h3>
-       <p>We conduct three  different kinds of audio encoders in our model, which are CNN-Char, Conformer-Char and Conformer-PPG. We take BERT as our baseline, which shares the same architecture with the text encoder in our model, and only takes text as input. Here we show one example of the input and output.
-         The raw audio, text and manual recorded prosodic boundaries are shown as follows.</p>
-        <div align="justify">
-           
-           
+       <p>We conduct three  different kinds of audio encoders in our model, which are CNN-Char, Conformer-Char and Conformer-PPG. We take BERT as our baseline, which shares the same architecture with the text encoder in our model, and only takes text as input. </p>
+         <p>Suppose the input audio and text is as follows, manual annotation based on the human recorded speech is used as the training target</p>
+         
+         <div align="justify">   
 <blockquote>
-   <p><b>Raw Audio:</b><audio controls><source src="demo.wav"></audio></p>
+  <p><b>Raw Audio:          </b><audio controls><source src="demo.wav"></audio></p>
  </blockquote> 
 <blockquote>
-  <p> <b>Raw Text:</b>没有很爱你，只是在大街上拼命追逐，和你背影很像的人。</p>
+  <p> <b>Raw Text:          </b>没有很爱你，只是在大街上拼命追逐，和你背影很像的人。</p>
    </blockquote> 
  <blockquote>
-  <p> <b>Mannual Annotation:</b>   CC LW CC CC PPH CC CC LW LW CC CC PW CC LW CC PPH CC CC PW CC LW CC CC LW IPH CC</p>
+  <p> <b>Mannual Annotation:</b>CC LW CC CC PPH CC CC LW LW CC CC PW CC LW CC PPH CC CC PW CC LW CC CC LW IPH CC</p>
    </blockquote> 
            
 <!--    <table align="center">
@@ -306,7 +305,7 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
   </tbody>
       </table>
          </blockquote>  -->
-           
+  <p>Here are the input and output of each model</p>
         <p><b>BERT:</b></p>
  <figure>
     <p style="text-align:center"><img src="./bert.png"  alt="AVSE"  width=600px/></p>
