@@ -275,39 +275,41 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
        <p>We conduct three  different kinds of audio encoders in our model, which are CNN-Char, Conformer-Char and Conformer-PPG. We take BERT as our baseline, which shares the same architecture with the text encoder in our model, and only takes text as input. Here we show one example of the input and output.
          The raw audio, text and manual recorded prosodic boundaries are shown as follows.</p>
         
-         <table border="1" align="center">
+         <table border="1" align="center"> 
     <tr>
-      <td>Raw Audio</td>
+      <td nowrap>Raw Audio</td>
       <td><audio controls>
            <source src="demo.wav">
          </audio></td>
     </tr>
     <tr>
-      <td>Raw Text</td>
-       <td> 没有很爱你，只是在大街上拼命追逐，和你背影很像的人。</td>
+      <td nowrap>Raw Text</td>
+      <td style="text-align:center" nowrap> <b>没有很爱你，只是在大街上拼命追逐，和你背影很像的人。</b></td>
     </tr>
     <tr>
-      <td>Mannual Annotation</td>
-       <td>CC LW CC CC PPH CC CC LW LW CC CC PW CC LW CC PPH CC CC PW CC LW CC CC LW IPH CC</td>
+      <td nowrap>Mannual Annotation</td>
+       <td style="text-align:center" nowrap><b>CC LW CC CC PPH CC CC LW LW CC CC PW CC LW CC PPH CC CC PW CC LW CC CC LW IPH CC</b></td>
     </tr>
-  <p>BERT:</p>
+         </table>
+        
+        <p><b>BERT:</b></p>
  <figure>
-    <p style="text-align:center"><img src="./bert.png"  alt="AVSE"  width=400px/></p>
+    <p style="text-align:center"><img src="./bert.png"  alt="AVSE"  width=600px/></p>
   </figure>
   
-  <p>CNN-Char:</p>
+  <p><b>CNN-Char:</b></p>
  <figure>
-    <p style="text-align:center"><img src="./cnn-char.png"  alt="AVSE"  width=400px/></p>
+    <p style="text-align:center"><img src="./cnn-char.png"  alt="AVSE"  width=600px/></p>
   </figure>
        
-  <p>Conformer-Char:</p>
+  <p><b>Conformer-Char:</b></p>
  <figure>
-    <p style="text-align:center"><img src="./conformer-char.png"  alt="AVSE"  width=400px/></p>
+    <p style="text-align:center"><img src="./conformer-char.png"  alt="AVSE"  width=600px/></p>
   </figure>
            
-  <p>Conformer-PPG:</p>
+  <p><b>Conformer-PPG:</b></p>
  <figure>
-    <p style="text-align:center"><img src="./ppg.png"  alt="AVSE"  width=400px/></p>
+    <p style="text-align:center"><img src="./ppg.png"  alt="AVSE"  width=600px/></p>
   </figure>
            
   </body>
@@ -828,7 +830,9 @@ Here are part of the speech for MOS test:
     </tr>
        
     
-   </table>
+   
+       
+       
 <!--   ======================================================================================     -->      
    
    
