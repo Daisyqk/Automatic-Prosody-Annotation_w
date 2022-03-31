@@ -272,8 +272,9 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
     <h3>
         Examples of input and output of the model:
       </h3>
-       <p>We conduct three  different kinds of audio encoders in our model, which are CNN-Char, Conformer-Char and Conformer-PPG. We take BERT as our baseline, which shares the same architecture with the text encoder in our model, and only takes text as input. Here we show one example of the input and output.</p>
-         <p>The raw audio, text and manual recorded prosodic boundaries are shown as follows.</p>
+       <p>We conduct three  different kinds of audio encoders in our model, which are CNN-Char, Conformer-Char and Conformer-PPG. We take BERT as our baseline, which shares the same architecture with the text encoder in our model, and only takes text as input. Here we show one example of the input and output.
+         The raw audio, text and manual recorded prosodic boundaries are shown as follows.</p>
+        
          <table border="1" align="center">
     <tr>
       <td>Raw Audio</td>
@@ -289,6 +290,26 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
       <td>Mannual Annotation</td>
        <td>CC LW CC CC PPH CC CC LW LW CC CC PW CC LW CC PPH CC CC PW CC LW CC CC LW IPH CC</td>
     </tr>
+  <p>BERT:</p>
+ <figure>
+    <p style="text-align:center"><img src="./bert.png"  alt="AVSE"  width=400px/></p>
+  </figure>
+  
+  <p>CNN-Char:</p>
+ <figure>
+    <p style="text-align:center"><img src="./cnn-char.png"  alt="AVSE"  width=400px/></p>
+  </figure>
+       
+  <p>Conformer-Char:</p>
+ <figure>
+    <p style="text-align:center"><img src="./conformer-char.png"  alt="AVSE"  width=400px/></p>
+  </figure>
+           
+  <p>Conformer-PPG:</p>
+ <figure>
+    <p style="text-align:center"><img src="./ppg.png"  alt="AVSE"  width=400px/></p>
+  </figure>
+           
   </body>
 </html>
         
@@ -306,8 +327,8 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
 The primary motivation of this work is to reduce the annotation cost of TTS system construction. Therefore, whether the automatic annotation is sufficient as an alternative to human annotation in TTS system training is worth studying. 
 We take the DurAIN TTS as our test-bed and conduct crowd-sourced MOS tests to compare TTS systems trained with automatic prosody annotations, manual annotations, and without prosody annotations
 For all TTS systems, we adopt the same text and prosody content in the original test set as inputs and randomly shuffle the order of the utterances to exclude other interference factors, only examining the audio prosody.  Note that each input used in the MOS test contains at least one PW or IPH prosodic boundary with at least 12 Chinese characters. For the system trained without prosodic boundary, the prosodic boundary in the input text will be omitted. Each audio sample is rated by 24 testers, who are asked to evaluate the prosody naturalness of the synthesized speech on a five-point scale, with the lowest and highest scores being 1 (“Bad”) and 5 (“Excellent”).
+The MOS results are shown in the following table.
 
-    The MOS results are shown in the following table.
 <figure>
     <p style="text-align:center"><img src="./mos.png"  alt="AVSE" height=100px width=200px/></p>
 <!--       <figcaption style="vertical-align:middle"> <b>Figure 1: </b> Illurstration of the audio-visual separation model</figcaption> -->
