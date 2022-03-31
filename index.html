@@ -277,28 +277,26 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
         <div align="justify">
            
            
-<!--       <blockquote>
-         <table border="1" align="center" frame=void>  -->
-   <table>
+<blockquote>
+   <table align="center">
         <tbody>
     <tr>
-      <td ><b>Raw Audio</b></td>
+      <td style="text-align:center" nowrap><b>Raw Audio:</b></td>
       <td style="text-align:center"><audio controls>
            <source src="demo.wav">
          </audio></td>
     </tr>
     <tr>
-      <td nowrap> <b>Raw Text</b></td>
+      <td style="text-align:center" nowrap> <b>Raw Text:</b></td>
       <td style="text-align:center" nowrap>没有很爱你，只是在大街上拼命追逐，和你背影很像的人。</td>
     </tr>
     <tr>
-      <td nowrap><b>Mannual Annotation</b></td>
+      <td nowrap><b>Mannual Annotation:  </b></td>
        <td style="text-align:center" nowrap>CC LW CC CC PPH CC CC LW LW CC CC PW CC LW CC PPH CC CC PW CC LW CC CC LW IPH CC</td>
     </tr>
   </tbody>
       </table>
-<!--          </table>
-         </blockquote> -->
+         </blockquote> 
         <p><b>BERT:</b></p>
  <figure>
     <p style="text-align:center"><img src="./bert.png"  alt="AVSE"  width=600px/></p>
@@ -326,33 +324,23 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
            
   </body>
 </html>
-        
-   
-
-The primary motivation of this work is to reduce the annotation cost of TTS system construction. Therefore, whether the automatic annotation is sufficient as an alternative to human annotation in TTS system training is worth studying. 
+<p>The primary motivation of this work is to reduce the annotation cost of TTS system construction. Therefore, whether the automatic annotation is sufficient as an alternative to human annotation in TTS system training is worth studying. 
 We take the DurAIN TTS as our test-bed and conduct crowd-sourced MOS tests to compare TTS systems trained with automatic prosody annotations, manual annotations, and without prosody annotations
 For all TTS systems, we adopt the same text and prosody content in the original test set as inputs and randomly shuffle the order of the utterances to exclude other interference factors, only examining the audio prosody.  Note that each input used in the MOS test contains at least one PW or IPH prosodic boundary with at least 12 Chinese characters. For the system trained without prosodic boundary, the prosodic boundary in the input text will be omitted. Each audio sample is rated by 24 testers, who are asked to evaluate the prosody naturalness of the synthesized speech on a five-point scale, with the lowest and highest scores being 1 (“Bad”) and 5 (“Excellent”).
-The MOS results are shown in the following table.
+   The MOS results are shown in the following table.</p>
 
 <figure>
     <p style="text-align:center"><img src="./mos.png"  alt="AVSE" height=100px width=200px/></p>
-<!--       <figcaption style="vertical-align:middle"> <b>Figure 1: </b> Illurstration of the audio-visual separation model</figcaption> -->
   </figure>
-Here are part of the speech for MOS test:
-   
-<!--   ======================================================================================     -->
+        <p>Here are part of the speech for MOS test:</p>
     <table border="1" align="center">
     <tr>
-      <td>No.</td>
       <td>Human recorded</td>
       <td>Automatic prosody</td>
       <td>Manual prosody </td>
       <td>No prosody</td> 
-<!--       <td>Text</td> -->
     </tr>
-<!--     m5dB -->
     <tr>
-      <td>1</td>
       <td>
          <audio controls>
            <source src="ref/01001010012%25ref.wav">
@@ -374,9 +362,11 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
      </tr>
-       
+    </table>
+        
+        
+    <table border="1" align="center">
      <tr>
-       <td>2</td>
       <td>
          <audio controls>
            <source src="ref/01001010267%25ref.wav">
@@ -398,9 +388,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
      </tr>
+</table>
        
+    <table border="1" align="center">
      <tr>
-       <td>3</td>
       <td>
          <audio controls>
            <source src="ref/01001010281%25ref.wav">
@@ -422,9 +413,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
      </tr>
+       </table>
        
+    <table border="1" align="center">
      <tr>
-       <td>4</td>
       <td>
          <audio controls>
            <source src="ref/01001010443%25ref.wav">
@@ -446,9 +438,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
       </tr>
+       </table>
        
+    <table border="1" align="center">
       <tr>
-       <td>5</td>
       <td>
          <audio controls>
            <source src="ref/01001010453%25ref.wav">
@@ -470,9 +463,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
       </tr>
+       </table>
        
+    <table border="1" align="center">
       <tr>
-       <td>6</td>
       <td>
          <audio controls>
            <source src="ref/01001010462%25ref.wav">
@@ -494,9 +488,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
     </tr>
-       
+       </table>  
+        
+    <table border="1" align="center">
    <tr>
-      <td>7</td>
       <td>
          <audio controls>
            <source src="ref/01001010480%25ref.wav">
@@ -518,9 +513,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
      </tr>
+       </table>
        
+    <table border="1" align="center">
      <tr>
-       <td>8</td>
       <td>
          <audio controls>
            <source src="ref/01001020033%25ref.wav">
@@ -542,9 +538,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
      </tr>
+       </table>
        
+    <table border="1" align="center">
      <tr>
-       <td>9</td>
       <td>
          <audio controls>
            <source src="ref/01001020067%25ref.wav">
@@ -566,9 +563,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
      </tr>
+       </table>
        
+    <table border="1" align="center">
      <tr>
-       <td>10</td>
       <td>
          <audio controls>
            <source src="ref/01001020245%25ref.wav">
@@ -590,9 +588,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
       </tr>
+       </table>
        
+    <table border="1" align="center">
       <tr>
-       <td>11</td>
       <td>
          <audio controls>
            <source src="ref/01001020255%25ref.wav">
@@ -614,9 +613,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
       </tr>
+       </table>
        
+    <table border="1" align="center">
       <tr>
-       <td>12</td>
       <td>
          <audio controls>
            <source src="ref/01001020308%25ref.wav">
@@ -638,10 +638,11 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
     </tr>
+       </table>
        
+    <table border="1" align="center">
        
        <tr>
-      <td>13</td>
       <td>
          <audio controls>
            <source src="ref/01001020321%25ref.wav">
@@ -663,9 +664,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
      </tr>
+       </table>
        
+    <table border="1" align="center">
      <tr>
-       <td>14</td>
       <td>
          <audio controls>
            <source src="ref/01001020340%25ref.wav">
@@ -687,9 +689,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
      </tr>
+       </table>
        
+    <table border="1" align="center">
      <tr>
-       <td>15</td>
       <td>
          <audio controls>
            <source src="ref/01001020430%25ref.wav">
@@ -711,9 +714,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
      </tr>
+       </table>
        
+    <table border="1" align="center">
      <tr>
-       <td>16</td>
       <td>
          <audio controls>
            <source src="ref/01001020435%25ref.wav">
@@ -735,9 +739,11 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
       </tr>
+        </table>
+       
+    <table border="1" align="center">
        
       <tr>
-       <td>17</td>
       <td>
          <audio controls>
            <source src="ref/01001020540%25ref.wav">
@@ -759,9 +765,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
       </tr>
+        </table>
        
+    <table border="1" align="center">
       <tr>
-       <td>18</td>
       <td>
          <audio controls>
            <source src="ref/01001030009%25ref.wav">
@@ -783,9 +790,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
     </tr>
+        </table>
        
+    <table border="1" align="center">
     <tr>
-       <td>19</td>
       <td>
          <audio controls>
            <source src="ref/01001030380%25ref.wav">
@@ -807,9 +815,10 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
     </tr>
+        </table>
        
+    <table border="1" align="center">
     <tr>
-       <td>20</td>
       <td>
          <audio controls>
            <source src="ref/01001030388%25ref.wav">
@@ -831,12 +840,8 @@ Here are part of the speech for MOS test:
          </audio>
       </td>
     </tr>
-       
-    
-   
-       
-       
-<!--   ======================================================================================     -->      
+ </table>
+ 
    
    
    
