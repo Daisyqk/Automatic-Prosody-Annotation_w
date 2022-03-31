@@ -275,24 +275,30 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
        <p>We conduct three  different kinds of audio encoders in our model, which are CNN-Char, Conformer-Char and Conformer-PPG. We take BERT as our baseline, which shares the same architecture with the text encoder in our model, and only takes text as input. Here we show one example of the input and output.
          The raw audio, text and manual recorded prosodic boundaries are shown as follows.</p>
         <div align="justify">
-      <blockquote>
-         <table border="1" align="center" frame=void> 
+           
+           
+<!--       <blockquote>
+         <table border="1" align="center" frame=void>  -->
+   <table>
+        <tbody>
     <tr>
-      <td nowrap>Raw Audio</td>
+      <td ><b>Raw Audio</b></td>
       <td style="text-align:center"><audio controls>
            <source src="demo.wav">
          </audio></td>
     </tr>
     <tr>
-      <td nowrap>Raw Text</td>
-      <td style="text-align:center" nowrap> <b>没有很爱你，只是在大街上拼命追逐，和你背影很像的人。</b></td>
+      <td nowrap> <b>Raw Text</b></td>
+      <td style="text-align:center" nowrap>没有很爱你，只是在大街上拼命追逐，和你背影很像的人。</td>
     </tr>
     <tr>
-      <td nowrap>Mannual Annotation</td>
-       <td style="text-align:center" nowrap><b>CC LW CC CC PPH CC CC LW LW CC CC PW CC LW CC PPH CC CC PW CC LW CC CC LW IPH CC</b></td>
+      <td nowrap><b>Mannual Annotation</b></td>
+       <td style="text-align:center" nowrap>CC LW CC CC PPH CC CC LW LW CC CC PW CC LW CC PPH CC CC PW CC LW CC CC LW IPH CC</td>
     </tr>
-         </table>
-         </blockquote>
+  </tbody>
+      </table>
+<!--          </table>
+         </blockquote> -->
         <p><b>BERT:</b></p>
  <figure>
     <p style="text-align:center"><img src="./bert.png"  alt="AVSE"  width=600px/></p>
@@ -313,20 +319,16 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
     <p style="text-align:center"><img src="./ppg.png"  alt="AVSE"  width=600px/></p>
   </figure>
            
+           
+   <h3>
+     TTS MOS test：
+   </h3>
+           
   </body>
 </html>
         
    
- 
 
-<!-- <!DOCTYPE html>
-
-<div style="border: none; width: 1000px; margin: 0 auto;">
-<body>
-    <h2 align="center">Automatic Prosody Annotation with Pre-Trained Text-Speech Model</h2>
-   <p style="line-height:100%", align="center"> <b>Authors: </b> Ziqian Dai, Jianwei Yu, Yan Wang, Nuo Chen, Yanyao Bian, Guangzhi Li,Deng Cai, Dong Yu</p>
-
-  
 The primary motivation of this work is to reduce the annotation cost of TTS system construction. Therefore, whether the automatic annotation is sufficient as an alternative to human annotation in TTS system training is worth studying. 
 We take the DurAIN TTS as our test-bed and conduct crowd-sourced MOS tests to compare TTS systems trained with automatic prosody annotations, manual annotations, and without prosody annotations
 For all TTS systems, we adopt the same text and prosody content in the original test set as inputs and randomly shuffle the order of the utterances to exclude other interference factors, only examining the audio prosody.  Note that each input used in the MOS test contains at least one PW or IPH prosodic boundary with at least 12 Chinese characters. For the system trained without prosodic boundary, the prosodic boundary in the input text will be omitted. Each audio sample is rated by 24 testers, who are asked to evaluate the prosody naturalness of the synthesized speech on a five-point scale, with the lowest and highest scores being 1 (“Bad”) and 5 (“Excellent”).
