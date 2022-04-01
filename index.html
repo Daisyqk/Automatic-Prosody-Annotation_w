@@ -273,18 +273,17 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
       <h3>
         Prosodic boundaries of Mandarin :
       </h3>
-       <p>The hierarchical prosody annotation adopted in this work categorizes the prosodic boundaries of Mandarin speech into five levels, including Character (CC), Lexicon Word (LW), Prosodic Word (PW), Prosodic Phrase (PPH) and Intonational Phrase (IPH).</p>
+       <p>The hierarchical prosody annotation adopted in this work categorizes the prosodic boundaries of Mandarin speech into five levels, which from low to high are Character (CC), Lexicon Word (LW), Prosodic Word (PW), Prosodic Phrase (PPH) and Intonational Phrase (IPH).
+         Prosodic Word (PW), Prosodic Phrase (PPH) and Intonational Phrase (IPH) correspond to three different lengths of pause in speech from short to long. Lexicon Word (LW) indicates syntactic boundary between words, and Chinese Character (CC) is the smallest unit of Chinese.</p>
        <figure>
-    <p style="text-align:center"><img src="./tree.png"  alt="AVSE" width=600px/></p>
+    <p style="text-align:center"><img src="./tree.png"  alt="AVSE" width=400px/></p>
       </figure> 
          
     <h3>
         Input and output of the model:
       </h3>
        <p>We conduct three  different kinds of audio encoders in our model, which are CNN-Char, Conformer-Char and Conformer-PPG. We take BERT as our baseline, which shares the same architecture with the text encoder in our model, and only takes text as input. </p>
-         <p>Suppose the input audio and text is as follows, manual annotation based on the human recording speech is used as the training target.</p>
-         
-         
+         <p>Suppose the input audio and text is as follows.</p>
          <div align="justify">   
 <blockquote>
    <p><b>Raw Audio:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><audio controls><source src="demo.wav"></audio></p>
@@ -292,30 +291,11 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
 <blockquote>
    <p><b>Raw Text:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>没有很爱你，只是在大街上拼命追逐，和你背影很像的人。</p>
    </blockquote> 
- <blockquote>
-  <p> <b>Mannual Annotation:</b>CC LW CC CC PPH CC CC LW LW CC CC PW CC LW CC PPH CC CC PW CC LW CC CC LW IPH CC</p>
-   </blockquote> 
-           
-<!--    <table align="center">
-        <tbody>
-    <tr>
-      <td style="text-align:center" nowrap><b>Raw Audio:</b></td>
-      <td style="text-align:center"><audio controls>
-           <source src="demo.wav">
-         </audio></td>
-    </tr>
-    <tr>
-      <td style="text-align:center" nowrap> <b>Raw Text:</b></td>
-      <td style="text-align:center" nowrap>没有很爱你，只是在大街上拼命追逐，和你背影很像的人。</td>
-    </tr>
-    <tr>
-      <td nowrap><b>Mannual Annotation:  </b></td>
-       <td style="text-align:center" nowrap>CC LW CC CC PPH CC CC LW LW CC CC PW CC LW CC PPH CC CC PW CC LW CC CC LW IPH CC</td>
-    </tr>
-  </tbody>
-      </table>
-         </blockquote>  -->
-  <p>Here are the input and output of BERT and our model:</p>
+  <p>Here are the examples of manual annotation, BERT and our model:</p>
+  <p><b>Manual Annotation:</b></p>
+ <figure>
+    <p style="text-align:center"><img src="./human.png"  alt="AVSE"  width=600px/></p>
+  </figure>
         <p><b>BERT:</b></p>
  <figure>
     <p style="text-align:center"><img src="./bert.png"  alt="AVSE"  width=600px/></p>
@@ -343,9 +323,8 @@ For all TTS systems, we adopt the same text and prosody content in the original 
         <p>Here are part of the speech for MOS test:</p>
   <div align="justify">
   <blockquote>
-   <p>1. Text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：该公司的现金管理系统无法应付激增的撤资要求。</p>
-   <p>&nbsp;&nbsp; Automatic：CC CC CC LW CC LW CC LW CC PW CC LW CC LW CC CC LW CC LW CC IPH CC </p>
-   <p>&nbsp;&nbsp; Manual&nbsp;&nbsp;&nbsp;：CC CC CC LW CC LW CC LW CC PPH CC LW CC LW CC CC LW CC LW CC IPH CC </p>
+     <p>1. <b>Text</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：该公司的现金管理系统无法应付激增的撤资要求。</p>
+   <p>&nbsp;&nbsp; Prosody&nbsp;&nbsp;&nbsp;：CC CC CC LW CC LW CC LW CC PPH CC LW CC LW CC CC LW CC LW CC IPH CC </p>
    </blockquote>
     <table align="center">
     <tr>
