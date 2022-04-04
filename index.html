@@ -315,7 +315,7 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
 <p>The primary motivation of this work is to reduce the annotation cost of TTS system construction. Therefore, whether the automatic annotation is sufficient as an alternative to human annotation in TTS system training is worth studying. 
 We take the DurAIN TTS as our test-bed and conduct crowd-sourced MOS tests to compare TTS systems trained with automatic prosody annotations, manual annotations, and without prosody annotations. 
 For all TTS systems, we adopt the same text and prosody content in the original test set as inputs and randomly shuffle the order of the utterances to exclude other interference factors, only examining the audio prosody.  Note that each input used in the MOS test contains at least one PW or IPH prosodic boundary with at least 12 Chinese characters. For the system trained without prosodic boundary, the prosodic boundary in the input text will be omitted. Each audio sample is rated by 24 testers, who are asked to evaluate the prosody naturalness of the synthesized speech on a five-point scale, with the lowest and highest scores being 1 (“Bad”) and 5 (“Excellent”).
-   The MOS results are shown in the following table.</p>
+   The MOS results with 95% confidence intervals are shown in the following table.</p>
 
 <figure>
     <p style="text-align:center"><img src="./mos.png"  alt="AVSE" height=100px width=200px/></p>
@@ -419,10 +419,23 @@ For all TTS systems, we adopt the same text and prosody content in the original 
      </tr>
 </table> 
      <div align="justify">
-  <blockquote>
+<!--   <blockquote>
      <p>3. <b>Text</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：在束河古镇各街巷深处，我总能遇到背着背篓的纳西老妇。<br><br>
    &nbsp;&nbsp;&nbsp;&nbsp;<b>Prosody</b>&nbsp;：LW CC LW CC PW CC CC LW CC PPH CC LW CC LW CC PPH CC LW CC CC PW CC LW CC IPH CC </p>
-   </blockquote>
+   </blockquote> -->
+ <table>
+      <tr>
+         <td>3.</td><td><b>Text</b></td><td>在</td><td>束</td><td>河</td><td>古</td><td>镇</td><td>各</td><td>街</td><td>巷</td><td>深</td><td>处</td><td>，</td><td>我</td><td>总</td><td>能</td><td>遇</td><td>到</td><td>背</td><td>着</td><td>背</td><td>篓</td><td>的</td><td>纳</td><td>西</td><td>老</td><td>妇</td><td>。</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
+      <tr>
+         <td> </td><td><b>Prosody</b></td><td>LW</td><td>CC</td><td>LW</td><td>CC</td><td>PW</td><td>CC</td><td>CC</td><td>LW</td><td>CC</td><td>PPH</td><td>CC</td><td>LW</td><td>CC</td><td>LW</td><td>CC</td><td>PPH</td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>PW</td><td>CC</td><td>LW</td><td>CC</td><td>IPH</td><td>CC</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
     <table align="center">
     <tr>
       <td style="text-align:center">Human recorded</td>
@@ -453,10 +466,23 @@ For all TTS systems, we adopt the same text and prosody content in the original 
      </tr>
        </table> 
    <div align="justify">
-  <blockquote>
+<!--   <blockquote>
      <p>4. <b>Text</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：或用掺有白酒的水浸泡，有明显的去咸效果。<br><br>
    &nbsp;&nbsp;&nbsp;&nbsp;<b>Prosody</b>&nbsp;：CC PW CC LW CC CC LW LW CC PPH CC LW CC CC PW CC LW CC IPH CC</p>
-   </blockquote>
+   </blockquote> -->
+     <table>
+      <tr>
+         <td>4.</td><td><b>Text</b></td><td>或</td><td>用</td><td>掺</td><td>有</td><td>白</td><td>酒</td><td>的</td><td>水</td><td>浸</td><td>泡</td><td>，</td><td>有</td><td>明</td><td>显</td><td>的</td><td>去</td><td>咸</td><td>效</td><td>果</td><td>。</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
+      <tr>
+         <td> </td><td><b>Prosody</b></td><td>CC</td><td>PW</td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>LW</td><td>LW</td><td>CC</td><td>PPH</td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>PW</td><td>CC</td><td>LW</td><td>CC</td><td>IPH</td><td>CC</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
    <table align="center">
     <tr>
       <td style="text-align:center">Human recorded</td>
@@ -487,10 +513,23 @@ For all TTS systems, we adopt the same text and prosody content in the original 
       </tr>
        </table> 
     <div align="justify">
-  <blockquote>
+<!--   <blockquote>
      <p>5. <b>Text</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：这对顾炎武启发很大，顾炎武还抄写一部带到山西。<br><br>
    &nbsp;&nbsp;&nbsp;&nbsp;<b>Prosody</b>&nbsp;：CC LW CC CC LW CC LW CC PPH CC CC CC LW LW CC LW CC PW CC LW CC IPH CC</p>
-   </blockquote>
+   </blockquote> -->
+   <table>
+      <tr>
+         <td>5.</td><td><b>Text</b></td><td>这</td><td>对</td><td>顾</td><td>炎</td><td>武</td><td>启</td><td>发</td><td>很</td><td>大</td><td>，</td><td>顾</td><td>炎</td><td>武</td><td>还</td><td>抄</td><td>写</td><td>一</td><td>部</td><td>带</td><td>到</td><td>山</td><td>西</td><td>。</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
+      <tr>
+         <td> </td><td><b>Prosody</b></td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>LW</td><td>CC</td><td>LW</td><td>CC</td><td>PPH</td><td>CC</td><td>CC</td><td>CC</td><td>LW</td><td>LW</td><td>CC</td><td>LW</td><td>CC</td><td>PW</td><td>CC</td><td>LW</td><td>CC</td><td>IPH</td><td>CC</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
    <table align="center">
     <tr>
       <td style="text-align:center">Human recorded</td>
@@ -521,10 +560,23 @@ For all TTS systems, we adopt the same text and prosody content in the original 
       </tr>
        </table>
      <div align="justify">
-  <blockquote>
+<!--   <blockquote>
      <p>6. <b>Text</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：该奖适用于任何一个有该网站账户的本科生或者研究生。<br><br>
    &nbsp;&nbsp;&nbsp;&nbsp;<b>Prosody</b>&nbsp;：CC PW CC CC LW CC LW CC LW LW CC CC LW CC CC LW CC CC PPH CC LW CC CC IPH CC</p>
-   </blockquote>  
+   </blockquote>   -->
+     <table>
+      <tr>
+         <td>6.</td><td><b>Text</b></td><td>该</td><td>奖</td><td>适</td><td>用</td><td>于</td><td>任</td><td>何</td><td>一</td><td>个</td><td>有</td><td>该</td><td>网</td><td>站</td><td>账</td><td>户</td><td>的</td><td>本</td><td>科</td><td>生</td><td>或</td><td>者</td><td>研</td><td>究</td><td>生</td><td>。</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
+      <tr>
+         <td> </td><td><b>Prosody</b></td><td>CC</td><td>PW</td><td>CC</td><td>CC</td><td>LW</td><td>CC</td><td>LW</td><td>CC</td><td>LW</td><td>LW</td><td>CC</td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>PPH</td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>IPH</td><td>CC</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
     <table align="center">
     <tr>
       <td style="text-align:center">Human recorded</td>
@@ -555,10 +607,23 @@ For all TTS systems, we adopt the same text and prosody content in the original 
     </tr>
        </table>  
      <div align="justify">
-  <blockquote>
+<!--   <blockquote>
      <p>7. <b>Text</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：十九世纪六十年代，那里是彼得堡无家可归者过夜的地方。<br><br>
    &nbsp;&nbsp;&nbsp;&nbsp;<b>Prosody</b>&nbsp;：CC LW CC LW CC LW CC PPH CC CC LW LW CC CC LW CC LW CC CC PW CC CC LW CC IPH CC</p>
-   </blockquote>   
+   </blockquote>    -->
+  <table>
+      <tr>
+         <td>7.</td><td><b>Text</b></td><td>十</td><td>九</td><td>世</td><td>纪</td><td>六</td><td>十</td><td>年</td><td>代</td><td>，</td><td>那</td><td>里</td><td>是</td><td>彼</td><td>得</td><td>堡</td><td>无</td><td>家</td><td>可</td><td>归</td><td>者</td><td>过</td><td>夜</td><td>的</td><td>地</td><td>方</td><td>。</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
+      <tr>
+         <td> </td><td><b>Prosody</b></td><td>CC</td><td>LW</td><td>CC</td><td>LW</td><td>CC</td><td>LW</td><td>CC</td><td>PPH</td><td>CC</td><td>CC</td><td>LW</td><td>LW</td><td>CC</td><td>CC</td><td>LW</td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>PW</td><td>CC</td><td>CC</td><td>LW</td><td>CC</td><td>IPH</td><td>CC</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
    <table align="center">
     <tr>
       <td style="text-align:center">Human recorded</td>
@@ -588,10 +653,23 @@ For all TTS systems, we adopt the same text and prosody content in the original 
       </td>
      </tr>
        </table>
-     <blockquote>
+<!--      <blockquote>
      <p>8. <b>Text</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：奶奶开心地笑得像一朵花儿！<br><br>
    &nbsp;&nbsp;&nbsp;&nbsp;<b>Prosody</b>&nbsp;：CC LW CC CC PPH CC LW LW CC LW CC IPH CC</p>
-   </blockquote>  
+   </blockquote>   -->
+  <table>
+      <tr>
+         <td>8.</td><td><b>Text</b></td><td>奶</td><td>奶</td><td>开</td><td>心</td><td>地</td><td>笑</td><td>得</td><td>像</td><td>一</td><td>朵</td><td>花</td><td>儿</td><td>！</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
+      <tr>
+         <td> </td><td><b>Prosody</b></td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>PPH</td><td>CC</td><td>LW</td><td>LW</td><td>CC</td><td>LW</td><td>CC</td><td>IPH</td><td>CC</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
    <table align="center">
     <tr>
       <td style="text-align:center">Human recorded</td>
@@ -621,10 +699,23 @@ For all TTS systems, we adopt the same text and prosody content in the original 
       </td>
      </tr>
        </table>
-      <blockquote>
+<!--       <blockquote>
      <p>9. <b>Text</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：她因为喜悦变得红扑扑的脸蛋就像树上的红苹果。<br><br>
    &nbsp;&nbsp;&nbsp;&nbsp;<b>Prosody</b>&nbsp;：LW CC LW CC PPH CC LW CC CC CC LW CC PPH CC LW CC CC LW CC CC IPH CC</p>
-   </blockquote>   
+   </blockquote>    -->
+   <table>
+      <tr>
+         <td>9.</td><td><b>Text</b></td><td>她</td><td>因</td><td>为</td><td>喜</td><td>悦</td><td>变</td><td>得</td><td>红</td><td>扑</td><td>扑</td><td>的</td><td>脸</td><td>蛋</td><td>就</td><td>像</td><td>树</td><td>上</td><td>的</td><td>红</td><td>苹</td><td>果</td><td>。</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
+      <tr>
+         <td> </td><td><b>Prosody</b></td><td>LW</td><td>CC</td><td>LW</td><td>CC</td><td>PPH</td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>CC</td><td>LW</td><td>CC</td><td>PPH</td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>IPH</td><td>CC</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
    <table align="center">
     <tr>
       <td style="text-align:center">Human recorded</td>
@@ -654,10 +745,23 @@ For all TTS systems, we adopt the same text and prosody content in the original 
       </td>
      </tr>
        </table>
-    <blockquote>
+<!--     <blockquote>
      <p>10. <b>Text</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：兴冲冲地跑起来看杨乐乐，好想问她汪涵来不！<br><br>
    &nbsp;&nbsp;&nbsp;&nbsp;<b>Prosody</b>&nbsp;：CC CC CC LW CC CC LW LW CC CC PPH CC CC LW CC PPH CC LW CC IPH CC</p>
-   </blockquote>  
+   </blockquote>   -->
+    <table>
+      <tr>
+         <td>10.</td><td><b>Text</b></td><td>兴</td><td>冲</td><td>冲</td><td>地</td><td>跑</td><td>起</td><td>来</td><td>看</td><td>杨</td><td>乐</td><td>乐</td><td>，</td><td>好</td><td>想</td><td>问</td><td>她</td><td>汪</td><td>涵</td><td>来</td><td>不</td><td>！</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
+      <tr>
+         <td> </td><td><b>Prosody</b></td><td>CC</td><td>CC</td><td>CC</td><td>LW</td><td>CC</td><td>CC</td><td>LW</td><td>LW</td><td>CC</td><td>CC</td><td>PPH</td><td>CC</td><td>CC</td><td>LW</td><td>CC</td><td>PPH</td><td>CC</td><td>LW</td><td>CC</td><td>IPH</td><td>C</td>
+      </tr>
+      <tr>
+         <td> </td>
+      </tr>
    <table align="center">
     <tr>
       <td style="text-align:center">Human recorded</td>
